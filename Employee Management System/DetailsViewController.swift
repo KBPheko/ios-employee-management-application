@@ -9,10 +9,33 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var idLbl: UILabel!
+    @IBOutlet weak var firstNameLbl: UILabel!
+    @IBOutlet weak var lastNameLbl: UILabel!
+    @IBOutlet weak var departmentLbl: UILabel!
+    @IBOutlet weak var emailLbl: UILabel!
+
+    
+    var idLabel: String?
+    var firstNameLabel: String?
+    var lastNameLabel: String?
+    var departmentLabel: String?
+    var emailLabel: String?
+    var numberLabel: String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        idLbl.text = idLabel
+        firstNameLbl.text = firstNameLabel
+        
+        lastNameLbl.text = lastNameLabel
+        departmentLbl.text = departmentLabel
+        emailLbl.text = emailLabel
+        
+        
     }
     
 
